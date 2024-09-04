@@ -1,0 +1,113 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: math;	
+}
+
+.para{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(-50deg,#c664c6,#FFAB91,#F06292,#c664c6);
+}
+
+
+fieldset{
+	width: 400px;
+	height: 330px;
+	padding: 20px;
+	border: 5px solid #FFF8E1;
+	border-radius: 10px;
+	background-color: #fff8e13b;
+}
+
+legend{
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF8E1;
+}
+
+label{
+	font-size: 18px;
+	color: #a316a3;
+	font-weight: bold;
+}
+
+input{
+	height: 35px;
+	margin-left: 20px;
+	padding: 10px;
+	background-color: #FFF8E1;
+	border: 2px solid #FFF8E1;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+textarea{
+	margin-left: 20px;
+	padding: 10px;
+	background-color: #FFF8E1;
+	border: 2px solid #FFF8E1;
+	border-radius: 5px;
+	font-size: 16px;
+	resize: none;
+}
+
+::placeholder{color: #e799e7;}
+
+.btn{
+	background-color: #a316a3;
+	border: 2px solid #a316a3;
+	color: #FFF8E1;
+	height: 40px;
+	margin: 0px;
+	margin-top: 10px;
+	padding: 0px 20px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.btn:hover{
+	background-color: #e640e6;
+	border: 2px solid #e640e6;
+}
+
+.child{
+	position: absolute;
+	top: 580px;
+	font-weight: bold;
+	font-size: 24px;
+	color: #450070;
+}
+
+
+@media(max-width:2580px){.child{position: absolute;top: 950px}}
+@media(max-width:2000px){.child{position: absolute;top: 600px}}
+@media(max-width:1450px){.child{position: absolute;top: 550px}}
+@media(max-width:1030px){.child{position: absolute;top: 490px}}
+@media(max-width:770px){.child{position: absolute;top: 500px}}
+@media(max-width:480px){
+	fieldset{height: 285px;width: 350px;border:3.5px solid #fff8e1;}
+	legend{font-size: 22px;}
+	label{font-size: 16px;}
+	input{height: 25px;margin-left: 10px;padding: 8px;font-size: 14px;}
+	textarea{margin-left: 10px;padding: 8px;font-size: 14px;}
+	.btn{height: 40px;margin: 0px;margin-top: 5px;padding: 10px 10px 15px 10px;font-size: 16px;}
+	.child{position: absolute;top: 480px;font-size: 18px;}
+}
+@media(max-width:390px){
+	fieldset{width: 310px;border:3px solid #fff8e1;height: 280px;padding: 15px}
+	legend{font-size: 20px}
+	input{margin-left: 5px;padding: 5px}
+	textarea{margin-left: 5px;padding: 5px 2px}
+}
+@media(max-width:330px){
+	fieldset{width: 260px;height: 240px;padding: 10px}
+	legend{font-size: 18px}label{font-size: 14px}
+	input{margin-left: 5px;padding: 5px;font-size: 12px}
+	textarea{margin-left: 5px;padding: 5px 2px;font-size: 12px}
+	.btn{font-size: 14px;padding: 5px;height: 28px;margin-top: 0px}
+	.child{position: absolute;top: 450px}
+}

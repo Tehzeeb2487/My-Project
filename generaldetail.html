@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="generaldetail.css">
+</head>
+<body>
+	<div class="para">
+		<form>
+			<fieldset>
+				<legend>Detail</legend>
+				<label>Name : </label>
+				<input type="text" name="" placeholder="Enter Name" id="nam"><br><br>
+				<label>Age : </label>
+				<input type="number" name="" placeholder="Enter Age" id="ag"><br><br>
+				<label>Address : </label>
+				<textarea  rows="3" cols="25" placeholder="Address" id="add"></textarea><br><br>
+				<input type="button" value="submit"  onclick="print()" class="btn">
+			</fieldset>
+    	</form>
+		<div class="child">
+			<span id="name"></span>
+			<span id="age"></span>
+			<span id="live"></span>
+		</div>
+	</div>
+
+
+	<script>
+		function print(){
+			var name = document.getElementById('nam').value;
+			var string = "Hello "+name;
+			document.getElementById('name').innerHTML=string;
+		
+			var age = document.getElementById('ag').value;
+			var string = "your age is "+age;
+			document.getElementById('age').innerHTML=string;
+		
+			var live = document.getElementById('add').value;
+			var string = "you are live in "+live;
+			document.getElementById('live').innerHTML=string;
+		}
+	</script>
+
+</body>
+</html>
